@@ -52,7 +52,7 @@ def shuffle(s):        # Shuffles the elements in a container data type
     return shuffled_s
 
 
-def set_given_board(n_givens):    # Generate a random board with 17 givens 
+def set_given_board(n_givens):    # Generate a random board with n givens 
     # randomize rows, columns and numbers (of valid base pattern)
     rBase = range(3) 
     rows  = [g * 3 + r for g in shuffle(rBase) for r in shuffle(rBase)] 
@@ -280,7 +280,7 @@ def shrink_multi_exp_decay_T(t, t_max, T_max=50, n_cycles=4):
 def exp_T(t, t_max, T_max=50, n_cycles=4, frac=2):
     A = T_max / (frac ** (np.ceil((t + 1) * n_cycles / t_max) - 1))
     return A * np.exp(- 5 * (t % int(np.ceil(t_max / n_cycles))) / (t_max / n_cycles))
-
+        
 
 ### GENERATE STARTING CONFIGURATION ###
 
