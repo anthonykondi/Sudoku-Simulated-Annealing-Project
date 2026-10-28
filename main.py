@@ -250,7 +250,7 @@ def plot_E_T(E_history, T_history, t_max):
     fig.suptitle("Energy & Temperature per Iteration")
 
     plt.tight_layout()
-    plt.savefig("Example plot of converged run(1).png")
+    plt.savefig("images/Example plot of converged run(1).png")
     plt.show()
 
 
