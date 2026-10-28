@@ -244,10 +244,13 @@ def plot_E_T(E_history, T_history, t_max):
     
     fig, ax = plt.subplots(2, 1)
     
-    ax[0].plot(t, E_history); ax[0].set_title("Energy")
-    ax[1].plot(t, T_history); ax[1].set_title("Temperature")
+    ax[0].plot(t, E_history); ax[0].set_ylabel("Energy"); ax[0].grid(True)
+    ax[1].plot(t, T_history); ax[1].set_ylabel("Temperature"); ax[1].grid(True)
+    fig.supxlabel("Number of iterations")
+    fig.suptitle("Energy & Temperature per Iteration")
 
     plt.tight_layout()
+    plt.savefig("Example plot of converged run(1).png")
     plt.show()
 
 
