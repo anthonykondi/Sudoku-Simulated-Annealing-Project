@@ -17,7 +17,7 @@ A learning project exploring the use of **simulated annealing and the Metropolis
 The following plot shows how the energy and temperature evolve
 during a simulated annealing run.
 
-![Energy and temperature convergence](images/Example plot of converged run.png)
+![Energy and temperature convergence](images/Example%20plot%20of%20converged%20run.png)
 
 ## Main Functions
 
@@ -47,7 +47,3 @@ Parameters such as the maximum iterations (`t_max`), initial temperature (`T_max
 - Implement conventional methods, such as backtracking, for comparison in time and memory usage.
 - Compare convergence rates and runtimes across different transition methods and cooling processes.
 - Add board visualization and animations during the search (for fun).
-
-## Project Status
-
-An experimental project for exploring probabilistic optimization. It is intended for learning and experimentation rather than as general-purpose Sudoku solving.
